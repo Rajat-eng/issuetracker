@@ -8,7 +8,8 @@
     "express-session": "^1.17.3",
     "mongoose": "^6.4.7",
     "node-sass-middleware": "^1.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "timeout": "^0.2.1"
   },
   "name": "issuetracker",
   "version": "1.0.0",
