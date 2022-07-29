@@ -1,17 +1,13 @@
 const mongoose = require("mongoose");
 require('dotenv').config();
-const URI = process.env.MONGODB_URI;
+ 
+main().catch(err => console.log("Cannot run database"));
 
-const connectDB = async () => {
-    try {
-      await mongoose.connect(URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      });
-      console.log("Connected to Altas DataBase :: MongoDB");
-    } catch (error) {
-      console.log(`Error in connecting with Mongodb: ${error}`);
-    }
-};
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/issue_tracker_dev');
+  console.log("Database successfully accessed");
+}
+const db=mongoose.connection;
 
-module.exports=connectDB;
+module.exports=db;
+
