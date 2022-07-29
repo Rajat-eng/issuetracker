@@ -1,0 +1,96 @@
+#s1 {
+  background-color: skyblue;
+  height: 25vh; }
+  #s1 > div .back-link-container a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem; }
+  #s1 > div .project-detail {
+    margin: 20px; }
+    #s1 > div .project-detail .project-name {
+      width: fit-content;
+      background-color: pink;
+      padding: 3px; }
+  #s1 > div #create-issue-link {
+    text-decoration: none;
+    height: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: blue;
+    color: white;
+    margin: 20px; }
+  #s1 > div #close-project-link {
+    text-decoration: none;
+    height: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: #d62946;
+    color: white;
+    margin: 20px; }
+
+#s2 {
+  min-height: 70vh;
+  padding: 20px 10px; }
+  #s2 h3 {
+    color: white; }
+  #s2 #sidebar-filters {
+    display: inline-block;
+    border: 1px solid white;
+    width: 25%;
+    padding: 10px;
+    height: 70vh;
+    margin-right: 10px; }
+    #s2 #sidebar-filters form {
+      color: white; }
+      #s2 #sidebar-filters form > * {
+        margin-bottom: 20px; }
+      #s2 #sidebar-filters form .title-container {
+        width: 100%; }
+        #s2 #sidebar-filters form .title-container input {
+          width: 90%; }
+      #s2 #sidebar-filters form .author-container {
+        width: 100%; }
+        #s2 #sidebar-filters form .author-container input {
+          width: 90%; }
+      #s2 #sidebar-filters form .label-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto; }
+        #s2 #sidebar-filters form .label-container > div {
+          margin: 0 20px 0 20px;
+          width: fit-content;
+          padding: 5px; }
+      #s2 #sidebar-filters form .filter-button {
+        display: flex;
+        justify-content: space-between; }
+        #s2 #sidebar-filters form .filter-button button {
+          width: 100px;
+          height: fit-content;
+          background-color: green;
+          color: wheat;
+          font-size: 1.2rem;
+          font-weight: 500; }
+          #s2 #sidebar-filters form .filter-button button a {
+            background-color: transparent; }
+        #s2 #sidebar-filters form .filter-button a {
+          text-decoration: none;
+          background-color: crimson;
+          font-size: 1rem;
+          padding: 3px; }
+  #s2 #issue-container {
+    border: 1px solid white;
+    display: inline-block;
+    min-height: 70vh;
+    width: 70%;
+    vertical-align: top;
+    color: white; }
+    #s2 #issue-container h2 {
+      color: white; }
+    #s2 #issue-container .issue-list-container {
+      list-style: none;
+      padding: 8px; }

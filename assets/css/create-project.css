@@ -1,0 +1,36 @@
+.create-project .back-link-container a {
+  text-decoration: none;
+  color: burlywood; }
+
+.create-project .create-project-container form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  flex-direction: column; }
+  .create-project .create-project-container form > * {
+    margin-bottom: 15px;
+    height: 20px;
+    background-color: #e8d9d9; }
+  .create-project .create-project-container form textarea {
+    height: 100px; }
+  .create-project .create-project-container form button {
+    width: 100px;
+    height: fit-content;
+    margin: auto;
+    background-color: green;
+    color: wheat;
+    font-size: 1.2rem;
+    font-weight: 500; }
+  .create-project .create-project-container form .label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%; }
+    .create-project .create-project-container form .label-container > div {
+      display: inline-block;
+      margin: 0 25px 0 25px;
+      padding: 5px; }

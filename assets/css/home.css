@@ -1,0 +1,44 @@
+.home-container {
+  color: white;
+  text-align: center; }
+  .home-container form {
+    margin: 20px;
+    height: 1.5rem; }
+    .home-container form input {
+      width: 60%;
+      height: inherit; }
+    .home-container form button {
+      background-color: #6868cb;
+      color: inherit;
+      height: 30px;
+      width: 100px; }
+  .home-container #new-btn {
+    text-decoration: none;
+    color: white; }
+    .home-container #new-btn button {
+      background-color: green;
+      color: white;
+      width: 200px;
+      height: 30px; }
+  .home-container .project-container {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around; }
+    .home-container .project-container a {
+      text-decoration: none;
+      color: inherit; }
+    .home-container .project-container .project-list-item {
+      border: 1px solid white;
+      width: 400px;
+      height: fit-content;
+      padding: 10px; }
+      .home-container .project-container .project-list-item .project-header {
+        display: flex;
+        justify-content: space-between; }
+      .home-container .project-container .project-list-item .project-detail {
+        padding: 5px;
+        margin: 8px 3px 8px 3px;
+        text-align: left; }
+      .home-container .project-container .project-list-item .project-footer {
+        display: flex;
+        justify-content: space-between; }

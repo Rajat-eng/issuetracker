@@ -1,0 +1,50 @@
+.create-project{
+    .back-link-container{
+        a{
+            text-decoration: none;
+            color:burlywood;
+        }
+    }
+
+    .create-project-container{
+      
+        form{
+            width:50%;
+            margin: auto;
+            display: flex;
+            text-align: center;
+            padding: 10px 5px 10px 5px;
+            flex-direction: column;
+            >*{
+                margin-bottom: 15px;
+                height: 20px;
+                background-color:rgb(232, 217, 217)
+            }
+            textarea{
+                height:100px
+            }
+            button{
+                width:100px;
+                height: fit-content;
+                margin: auto;
+                background-color: green;
+                color: wheat;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            .label-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                >div{
+                    display: inline-block;
+                    margin: 0 25px 0 25px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

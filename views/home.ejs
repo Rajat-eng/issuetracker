@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+<div class="home-container">
+
+    <h2> PROJECTS</h2>
+
+    <form action="/search-project" method="post">
+        <input type="text" placeholder="Search project..." name="title" value="<%= input_value %>" />
+        <button type="submit">Search</button>
+    </form>
+    <a href="/project/create" id="new-btn"><button>New Project</button> </a>
+    <div class="project-container">
+        <%for(project of projects){%>
+            <%-include('_project')%>
+        <%}%>
+    </div>
+
+</div>

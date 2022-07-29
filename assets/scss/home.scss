@@ -1,0 +1,60 @@
+.home-container{
+  color: white;
+  text-align: center;
+    form{
+        margin:20px;
+        height:1.5rem;
+        input{
+            width:60%;    
+            height: inherit;
+        }
+        button{
+            background-color: rgb(104, 104, 203);
+            color: inherit;
+            height: 30px;
+            width: 100px;
+        }
+    }
+    #new-btn{
+        text-decoration: none;
+        color:white;
+        
+        button{
+            background-color: green;
+            color:white;
+            width: 200px;
+            height:30px;
+        }
+        
+    }
+
+    .project-container{
+        margin: 50px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color:inherit;
+        }
+       
+        .project-list-item{
+            border:1px solid white;
+            width:400px;
+            height: fit-content;
+            padding: 10px;
+            .project-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .project-detail{
+                padding:5px;
+                margin:8px 3px 8px 3px;
+                text-align: left;
+            }
+            .project-footer{
+                display: flex;
+                justify-content: space-between;  
+            }
+        }
+    }
+}

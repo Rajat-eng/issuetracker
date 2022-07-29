@@ -1,0 +1,58 @@
+.issue-item{
+    width:90%;
+    background-color: grey;
+    margin-bottom: 20px;
+    padding:5px 15px 5px 15px;
+
+    .issue-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .issue-title{
+            font-size: 1rem;
+            background-color: gray;
+            padding:2px;
+            font-weight: bold;
+        }
+        .issue-author{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        .issue-button{
+            display: flex;
+            align-items: center;
+            span{
+                color:bisque;
+                font-size: 1.3rem;
+            }
+            >*{
+                margin-left: 20px;
+            }
+            button{
+                background-color: blue;
+                font-size: 1.2rem;
+                font-weight: 400;
+                color:white;
+            }
+            i{
+                color:red;
+            }
+        }
+    }
+
+    .issue-detail{
+        margin-bottom: 15px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        border:1px dotted white;
+        padding:5px;
+    }
+    .issue-labels{
+        span{
+          margin:0 10px 0 10px;  
+        }
+    }
+
+}

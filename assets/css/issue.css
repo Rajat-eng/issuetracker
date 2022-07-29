@@ -1,0 +1,41 @@
+.issue-item {
+  width: 90%;
+  background-color: grey;
+  margin-bottom: 20px;
+  padding: 5px 15px 5px 15px; }
+  .issue-item .issue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; }
+    .issue-item .issue-header .issue-title {
+      font-size: 1rem;
+      background-color: gray;
+      padding: 2px;
+      font-weight: bold; }
+    .issue-item .issue-header .issue-author {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .issue-item .issue-header .issue-button {
+      display: flex;
+      align-items: center; }
+      .issue-item .issue-header .issue-button span {
+        color: bisque;
+        font-size: 1.3rem; }
+      .issue-item .issue-header .issue-button > * {
+        margin-left: 20px; }
+      .issue-item .issue-header .issue-button button {
+        background-color: blue;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white; }
+      .issue-item .issue-header .issue-button i {
+        color: red; }
+  .issue-item .issue-detail {
+    margin-bottom: 15px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted white;
+    padding: 5px; }
+  .issue-item .issue-labels span {
+    margin: 0 10px 0 10px; }

@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="/css/create-project.css">
+<div class="create-project">
+    <div class="back-link-container">
+        <a href="/">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back</span>
+        </a>
+    </div>
+    <div class="create-project-container">
+        <form action="/project/create-project" method="post">
+            <input type="text" name="name" placeholder="Project Name (Max. 30 characters)" maxlength="30" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="text" name="author" placeholder="Author (Max. 20 characters)" maxlength="20" required>
+            <button type="submit">Create Project</button>
+        </form>
+    </div>
+</div>

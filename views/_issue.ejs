@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/issue.css">
+
+<li class="issue-item" id="<%=issue._id%>">
+
+    <div class="issue-header">
+        <div class="header-detail">
+            <div class="issue-title"><%=issue.title%></div>
+            <div class="issue-author"><%=issue.author%></div>
+        </div>
+        <div class="issue-button">
+            <%if(issue.status=='ongoing'){%>
+                <form action="/issue/resolve-issue/<%=issue._id%>" method="get">
+                    <button tpe="submit">Resolve</button>
+                </form>
+            <%}else{%>
+                <span > Resolved</span>    
+            <%}%>
+            <span>
+                <a href="/issue/delete-issue/<%=issue._id%>"> <i class="fas fa-trash"></i></a>
+            </span>
+        </div>
+    </div>
+    <div class="issue-detail">
+        <span><%=issue.description%></span>
+        <span><%=issue.createdAt.toLocaleString()%></span>
+    </div>
+    <div class="issue-labels">
+       <%for(label of issue.labels){%>
+            <span>
+                <%=label%> 
+            </span> 
+       <%}%>
+    </div>
+
+</li>

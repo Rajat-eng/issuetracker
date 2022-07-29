@@ -1,0 +1,16 @@
+<a href="/project/<%=project._id%>">
+    <div class="project-list-item">
+        <div class="project-header">
+            <p><%=project.name%></p>
+            <p><%=project.status%></p>
+        </div>
+        <div class="project-detail">
+            <%=project.description%>
+        </div>
+        <div class="project-footer">
+            <p><%=project.author%></p>
+            <p><%=project.createdAt.toLocaleString()%></p>
+        </div>
+    </div>   
+</a>
+
