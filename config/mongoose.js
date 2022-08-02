@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 require('dotenv').config();
  
+const URI=process.env.MONGODB_URI;
 main().catch(err => console.log("Cannot run database"));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/issue_tracker_dev');
+  await mongoose.connect(URI);
   console.log("Database successfully accessed");
 }
 const db=mongoose.connection;
