@@ -36,7 +36,7 @@ app.set('views','./views');
 app.use(express.json());
 app.use(express.text());
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./assets'));
 
 app.use('/',require('./routes'));
